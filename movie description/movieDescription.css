@@ -1,0 +1,177 @@
+body {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 600;
+    background-color: #c4bbd7;
+}
+
+.backtosearch {
+    margin: 50px auto 0;
+    width: 70%;
+    height: 60px;
+}
+
+.backtosearch__txt {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 32px;
+}
+
+.backtosearch__txt a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #32127A;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.backtosearch__txt a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    padding: 30px 20px 30px;
+    margin: 0 auto;
+    width: 70%;
+    height: 500px;
+    background-color: #32127A;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4); 
+}
+
+.section__img,
+.section__description {
+    padding: 10px;
+    width: calc(50%-5px);
+    height: 100%;
+}
+
+.section__img {
+    text-align: center;
+}
+
+.section__description h2 {
+    margin-bottom: 28px;
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    color: white;
+}
+
+.movie-param {
+    margin-bottom: 10px;
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(210, 208, 208);
+}
+
+@media (max-width: 1000px) {
+    .backtosearch {
+        width: 80%;
+    }
+    .section {
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .section {
+        height: 400px;
+    }
+
+    .section__img {
+        width: 40%;
+    }
+
+    .section__description {
+        width: 60%;
+    }
+
+    .poster {
+        width: 100%;
+        height: auto;
+    }
+
+    .section__description h2 {
+        font-size: 34px;
+    }
+
+    .movie-param {
+    font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        height: 320px;
+    }
+
+    .section__description h2 {
+        font-size: 26px;
+    }
+
+    .movie-param {
+    font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .section {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .section__description {
+        width: 100%;
+    }
+
+    .section__img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .poster {
+        width: 35%;
+    }
+
+    .section__description h2 {
+        text-align: center;
+    }
+    
+    .movie-param {
+    text-align: center;
+    }
+
+    .backtosearch {
+        height: 30px;
+    }
+
+    .backtosearch__txt {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .backtosearch__txt a {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 300px) {
+    .section {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .section__description h2 {
+        font-size: 18px;
+    }
+
+    .movie-param {
+    font-size: 9px;
+    }
+
+}
